@@ -1,0 +1,26 @@
+# systeme d'achat de billet de cinéma
+#  Création des valeurs
+name = input("Entrer votre nom : ")
+username = input(" Entrer votre prénom : ")
+
+
+# Affichage du nom du cinéma ainsi que du nom de la personne
+
+print("Bonjour " + username + " et Bienvenue dans notre cinéma. ")
+print("Quel film voulez vous regarder ?")
+film = input("nom du film : ")
+print(" Vous voulez regarder " + film + " ?" )
+age = int(input("Quel est votre age ? "))
+
+# si la personne à mois de 12 ans
+if age < 12:
+    prix_total = 7
+elif age < 18:
+    prix_total = 10
+else:
+    prix_total = 12
+
+    pop_corn_request = input("Souhaitez vous du pop corn ? (Oui, Non)")
+    if pop_corn_request == "oui":
+        prix_total += 5
+        print("Vous devez payer", prix_total, " €")
