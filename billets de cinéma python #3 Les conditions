@@ -24,3 +24,5 @@ else:
     if pop_corn_request == "oui":
         prix_total += 5
         print("Vous devez payer", prix_total, " €")
+    else:
+        print(str(prix_total))
